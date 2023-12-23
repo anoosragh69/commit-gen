@@ -21,6 +21,7 @@ jobs:
         run: | 
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           echo "## 🤔 LAST UPDATED AT: ${d}" > update.md
+          echo "print('Last updated at: $d')" > main.py
 
       - name: Commit changes
         run: |
